@@ -1,0 +1,752 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, button, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    background: #ffb300;
+}
+
+
+#wrapper {
+    overflow: hidden;
+    padding: 40px 0 0 0;
+}
+
+#header {
+    width: 770px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#header h1.logo,
+#header h1.logo a {
+    width: 220px;
+    height: 70px;
+    display: block;
+    text-indent: -1000em;
+    background: url(../img/logo.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#header h2.tagline {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 115px;
+    height: 14px;
+    text-indent: -1000em;
+    background: url(../img/tagline.png) no-repeat;
+}
+
+#header ul.languages {
+    border: solid 1px #ffffff;
+    overflow: hidden;
+    float: right;
+    list-style: none;
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+
+#header ul.languages li {
+    float: left;
+    border-right: solid 1px #ffffff;
+}
+
+#header ul.languages li a {
+    display: block;
+    padding: 4px 7px;
+    text-indent: -1000em;
+    background: #ffffff no-repeat;
+    background-position: 7px 4px;
+    height: 10px;
+    font-size: 1px;
+    line-height: normal;
+}
+
+#header ul.languages li.de {
+    border-right: none;
+}
+
+#header ul.languages li.pl a {
+    width: 40px;
+    background-image: url(../img/lang-pl.png);
+}
+
+#header ul.languages li.de a {
+    width: 49px;
+    background-color: #ffb300;
+    background-image: url(../img/lang-de.png);
+}
+
+#header ul.menu {
+    margin: 70px 2px 0 0;
+    list-style: none;
+    height: 70px;
+    float: right;
+}
+
+#header ul.menu li {
+    float: left;
+    height: 36px;
+    padding: 0 6px 34px 19px;
+}
+
+#header ul.menu li.selected {
+    background: url(../img/menu-selected.png) no-repeat;
+    background-position: left bottom;
+}
+
+#header ul.menu li a {
+    display: block;
+    height: 36px;
+    text-indent: -1000em;
+}
+
+#header ul.menu li a.firm {
+    background: url(../img/menu-firm.png) no-repeat;
+    width: 51px;
+}
+
+#header ul.menu li a.services {
+    background: url(../img/menu-services.png) no-repeat;
+    width: 56px;
+}
+
+#header ul.menu li a.portfolio {
+    background: url(../img/menu-portfolio.png) no-repeat;
+    width: 92px;
+}
+
+#header ul.menu li a.prices {
+    background: url(../img/menu-prices.png) no-repeat;
+    width: 64px;
+}
+
+#header ul.menu li a.contact {
+    background: url(../img/menu-contact.png) no-repeat;
+    width: 71px;
+}
+
+#header ul.menu li a.firm:hover,
+#header ul.menu li.selected a.firm {
+    background: url(../img/menu-firm-selected.png) no-repeat;
+}
+
+#header ul.menu li a.services:hover,
+#header ul.menu li.selected a.services {
+    background: url(../img/menu-services-selected.png) no-repeat;
+}
+
+#header ul.menu li a.portfolio:hover,
+#header ul.menu li.selected a.portfolio {
+    background: url(../img/menu-portfolio-selected.png) no-repeat;
+}
+
+#header ul.menu li a.prices:hover,
+#header ul.menu li.selected a.prices {
+    background: url(../img/menu-prices-selected.png) no-repeat;
+}
+
+#header ul.menu li a.contact:hover,
+#header ul.menu li.selected a.contact {
+    background: url(../img/menu-contact-selected.png) no-repeat;
+}
+
+#content {
+    background: url(../img/content-bg.png) repeat-y;
+    background-position: center top;
+}
+
+#content div.content {
+    background: url(../img/content-top.png) no-repeat;
+    background-position: center top;
+}
+
+#content div.body {
+    width: 580px;
+    margin: 0 auto;
+    padding: 0 75px 20px 115px;
+    background: #ffffff url(../img/content-right.png) repeat-y;
+    background-position: right top;
+    position: relative;
+}
+
+#content div.body ul.submenu {
+    position: absolute;
+    top: 0;
+    left: 386px;
+    float: left;
+    overflow: hidden;
+    list-style: none;
+}
+
+#content div.body ul.submenu li {
+    float: left;
+    padding: 35px 0 16px 0;
+    height: 19px;
+    margin: 0 23px 0 0;
+}
+
+#content div.body ul.submenu li.selected {
+    background: url(../img/submenu-selected.png) no-repeat;
+}
+
+#content div.body ul.submenu li a {
+    display: block;
+    height: 19px;
+    text-indent: -1000em;
+}
+
+#content div.body ul.submenu li a.buildings {
+    width: 108px;
+    background: url(../img/submenu-buildings.png) no-repeat;
+}
+
+#content div.body ul.submenu li a.renovations {
+    width: 71px;
+    background: url(../img/submenu-renovations.png) no-repeat;
+}
+
+#content div.body ul.submenu li a.buildings:hover,
+#content div.body ul.submenu li.selected a.buildings {
+    background: url(../img/submenu-buildings-selected.png) no-repeat;
+}
+
+#content div.body ul.submenu li a.renovations:hover,
+#content div.body ul.submenu li.selected a.renovations {
+    background: url(../img/submenu-renovations-selected.png) no-repeat;
+}
+
+#content div.body h2 {
+    height: 42px;
+    background: url(../img/header.png) no-repeat;
+    margin: 0 -75px 0 -115px;
+    padding: 14px 75px 34px 115px;
+}
+
+#content div.body h2 span {
+    display: block;
+    height: 42px;
+    text-indent: -1000em;
+}
+
+#content div.body h2 span.firm {
+    background: url(../img/header-firm.png) no-repeat;
+    width: 64px;
+}
+
+#content div.body h2 span.services {
+    background: url(../img/header-services.png) no-repeat;
+    width: 69px;
+}
+
+#content div.body h2 span.portfolio {
+    background: url(../img/header-portfolio.png) no-repeat;
+    width: 114px;
+}
+
+#content div.body h2 span.prices {
+    background: url(../img/header-prices.png) no-repeat;
+    width: 79px;
+}
+
+#content div.body h2 span.contact {
+    background: url(../img/header-contact.png) no-repeat;
+    width: 88px;
+}
+
+#content div.body p {
+    margin: 20px 0 0 0;
+}
+
+div.imagelist dl {
+    overflow: hidden;
+    margin: 0 0 20px -115px;
+}
+
+div.imagelist dl dt {
+    float: left;
+    width: 220px;
+    margin: 0 20px 0 0;
+}
+
+ul.imagelist a,
+ul.imagelist a img,
+div.imagelist dl dt a,
+div.imagelist dl dt a img {
+    display: block;
+    width: 220px;
+    height: 80px;
+    position: relative;
+    text-decoration: none;
+}
+
+ul.imagelist a span,
+div.imagelist dl dt a span {
+    width: 200px;
+    height: 30px;
+    background: url(../img/imageover.png) no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 0 10px;
+    font-size: 16px;
+    display: none;
+}
+
+ul.imagelist a span {
+    display: block;
+}
+
+ul.imagelist a:hover span,
+div.imagelist dl dt a:hover span {
+    background: url(../img/imageover-hover.png) no-repeat;
+    display: block;
+}
+
+div.imagelist dl dd {
+    overflow: hidden;
+}
+
+#content div.imagelist dl dd h3 {
+    margin: 0 0 5px 0;
+    padding: 0;
+    background: none;
+    line-height: normal;
+    height: auto;
+    font-weight: bold;
+}
+
+div.imagelist dl dd h3 a {
+    color: #ffcc00;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+ul.imagelist {
+    overflow: hidden;
+    list-style: none;
+    margin: 0 -25px 0 -115px;
+}
+
+ul.imagelist li {
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+#content div.imagelist dl dd p {
+    margin: 0;
+}
+
+#content h4.prices {
+    width: 283px;
+    height: 17px;
+    top: 37px;
+    left: 386px;
+    position: absolute;
+    text-indent: -1000em;
+    background: url(../img/prices.png) no-repeat;
+}
+
+#content div.prices {
+    overflow: hidden;
+    margin: 0 0 28px 0;
+}
+
+#content div.left,
+#content div.right {
+    float: left;
+    width: 280px;
+}
+
+#content div.left {
+    margin-right: 20px;
+}
+
+#content h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+    border-bottom: solid 1px #cccccc;
+    padding: 4px 0 3px 0;
+}
+
+#content ul.list h5 {
+    padding-top: 10px;
+}
+
+#content em.small {
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+    border: none;
+    color: #ffcc00;
+    display: block;
+    font-weight: bold;
+}
+
+#content h5.menua {
+    padding-top: 22px;
+}
+
+#content h5.menub {
+    padding-top: 21px;
+}
+
+#content h5.menud {
+    padding-top: 29px;
+}
+
+#content h5 span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#content ul.topmenu {
+    list-style: none;
+}
+
+#content ul.topmenu li {
+    border-bottom: solid 1px #cccccc;
+    padding: 3px 0 3px 11px;
+    background: url(../img/topmenu.png) no-repeat;
+}
+
+#content ul.topmenu li a {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#content ul.topmenu li a:hover {
+    color: #ffb300;
+}
+
+#content h3 {
+    font-size: 18px;
+    margin: 25px -25px 15px -115px;
+    padding: 0 25px 0 115px;
+    background: #e5e5e5;
+    height: 50px;
+    line-height: 50px;
+    font-weight: normal;
+}
+
+#content ul.list {
+    margin: 0 -25px 0 -115px;
+    list-style: none;
+}
+
+#content ul.list ol {
+    overflow: hidden;
+    padding: 0 0 0 25px;
+}
+
+#content ul.list ol li {
+    font-size: 11px;
+    color: #666666;
+}
+
+#content ul.list ol li.star {
+    font-size: 11px;
+    color: #000000;
+    list-style: none;
+}
+
+#content ul.list ol li.star a {
+    height: 16px;
+    line-height: 16px;
+    border: solid 1px #ffb300;
+    font-size: 11px;
+    color: #ffb300;
+    padding: 0 18px 0 4px;
+    float: right;
+    text-decoration: none;
+    background: url(../img/backtop.png) no-repeat;
+    background-position: right top;
+    margin: 5px 55px 0 0;
+    text-align: center;
+    width: 76px;
+}
+
+#content ul.list ol li span {
+    font-size: 13px;
+    color: #000000;
+    margin: 0 0 0 -35px;
+    padding: 0 0 0 35px;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: solid 1px #cccccc;
+}
+
+#content ul.list ol li span em {
+    color: #666666;
+    font-size: 11px;
+    float: right;
+    display: block;
+    height: 25px;
+    width: 156px;
+}
+
+#content ul.list ol li span em cite {
+    border-left: solid #ffffff 2px;
+    border-right: solid #ffffff 2px;
+    border-bottom: solid #e5e5e5 1px;
+    float: left;
+    width: 90px;
+    display: block;
+    height: 25px;
+    font-size: 13px;
+    color: #000000;
+    text-align: right;
+    padding: 0 9px 0 0;
+}
+
+strong.phone,
+a.mail {
+    font-weight: bold;
+    color: #ffb300;
+    text-decoration: none;
+}
+
+strong.invite {
+    display: block;
+    font-weight: bold;
+    padding: 5px 0 15px;
+}
+
+div.contact address {
+    font-size: 14px;
+}
+
+div.contact address strong {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+div.contact address strong em {
+    color: #ffb300;
+}
+
+div.inputs {
+    float: left;
+    width: 230px;
+    margin: 0 10px 0 0;
+}
+
+div.contact input,
+div.contact textarea {
+    color: #000000;
+    font-size: 13px;
+    padding: 5px 7px 4px;
+    width: 214px;
+    border: solid 1px #ffb300;
+    margin: 0 0 10px 0;
+}
+
+div.contact input.wide {
+    width: 444px;
+}
+
+div.contact input.empty,
+div.contact textarea.empty {
+    color: #999999;
+}
+
+div.contact textarea {
+    height: 75px;
+    width: 444px;
+}
+
+div.contact fieldset {
+    margin: 15px -5px 0 -115px;
+}
+
+div.contact button {
+    height: 24px;
+    float: right;
+    background: url(../img/submit.png) no-repeat;
+    border: solid 1px #ffb300;
+    width: 102px;
+    text-indent: -1000em;
+    cursor: pointer;
+}
+
+div.contact button:hover {
+    background: url(../img/submit-hover.png) no-repeat;
+}
+
+div.gallery {
+    margin: 0 -75px -20px -115px;
+    overflow: hidden;
+}
+
+div.gallery ul.thumbs {
+    float: left;
+    margin: 0 20px 0 -10px;
+    width: 260px;
+    list-style: none;
+}
+
+div.gallery ul.thumbs li.prev {
+    background: url(../img/gallery-prev.png) no-repeat;
+}
+
+div.gallery ul.thumbs li.next {
+    background: url(../img/gallery-next.png) no-repeat;
+}
+
+div.gallery ul.thumbs li.prev a,
+div.gallery ul.thumbs li.next a {
+    text-indent: -1000em;
+}
+
+div.gallery ul.thumbs li.blank {
+    display: none;
+}
+
+div.gallery ul.thumbs li {
+    width: 55px;
+    height: 55px;
+    margin: 0 0 10px 10px;
+    float: left;
+}
+
+div.gallery ul.thumbs li a,
+div.gallery ul.thumbs li a img {
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+
+div.gallery #photo {
+    position: relative;
+}
+
+div.gallery #photo,
+div.gallery #photo li,
+div.gallery #photo li img {
+    width: 500px;
+    height: 330px;
+    overflow: hidden;
+    display: block;
+}
+
+div.gallery #photo li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#wrapper div.maincontent div.body {
+    background: #ffffff;
+    padding-right: 25px;
+    width: 530px;
+}
+
+#wrapper div.maincontent h2.promoted {
+    padding: 29px 0 14px;
+    background: url(../img/welcome.png) no-repeat;
+    background-position: 0px 29px;
+    margin: 0 -75px 0 0;
+    height: 27px;
+}
+
+#wrapper div.maincontent p {
+    margin: 0;
+}
+
+#wrapper div.maincontent div.content {
+    background: url(../img/content-top-hi.png) no-repeat;
+    background-position: center top;
+}
+
+#lastone {
+    height: 300px;
+    background: url(../img/main.png) no-repeat;
+}
+
+#lastone div.content,
+#lastone img {
+    width: 770px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+#lastone div.content {
+    margin: 0 auto;
+}
+
+#lastone a {
+    display: block;
+    width: 386px;
+    height: 120px;
+    background: url(../img/realisations.png) no-repeat;
+    background-position: 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -1000em;
+}
+
+#lastone a:hover {
+    background-position: 0px -120px;
+}
+
+#wrapper div.mainfooter {
+    background-position: left -50px;
+}
+
+#wrapper div.mainfooter address {
+    background-position: left bottom;
+    height: 50px;
+    padding-bottom: 50px;
+    line-height: 50px;
+}
+
+#footer {
+    background: url(../img/footer-top.png) no-repeat;
+    background-position: center top;
+    padding: 0 0 38px 0;
+}
+
+#footer address {
+    display: block;
+    padding: 0 70px 0 0;
+    margin: 0 auto;
+    width: 700px;
+    text-align: right;
+    font-style: normal;
+    background: url(../img/footer-bg.png) no-repeat;
+    height: 150px;
+    line-height: 150px;
+}
+
+#footer address strong em {
+    color: #ffb300;
+}
